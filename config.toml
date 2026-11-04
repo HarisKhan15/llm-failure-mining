@@ -1,0 +1,31 @@
+# Configuration for the LLM failure mining pipeline.
+# Paths are relative to the project root.
+
+[data]
+# Full dataset (download with: python scripts/fetch_aiw_data.py)
+path = "data/raw/AIW_AIW_plus.json"
+# Small committed sample for quick demos and tests
+sample_path = "data/sample/aiw_sample.json"
+
+[run]
+seed = 42
+output_dir = "results"
+
+[clustering]
+# Only failed responses with at least this many words are clustered.
+# Very short answers ("### Answer: 4") carry no reasoning text to group.
+min_words = 20
+# Maximum number of failed responses to cluster (keeps the run fast).
+max_responses = 8000
+# Candidate numbers of clusters; the best one is chosen by silhouette score.
+k_min = 4
+k_max = 10
+svd_components = 100
+
+[rules]
+min_support = 0.02
+min_confidence = 0.5
+top_n = 25
+
+[prediction]
+n_splits = 5

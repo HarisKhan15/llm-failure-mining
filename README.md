@@ -136,6 +136,5 @@ Apriori thresholds (`min_support`, `min_confidence`) or the number of folds.
 ## Documentation
 
 - [PIPELINE_EXPLAINED.md](PIPELINE_EXPLAINED.md): how every part works, in plain English
-- [PROFESSOR_DEMO.md](PROFESSOR_DEMO.md): five-minute demo script and likely questions
 - [VERIFICATION.md](VERIFICATION.md): what was tested and the results
 - [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md): data source and licenses

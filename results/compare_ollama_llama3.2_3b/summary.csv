@@ -1,0 +1,4 @@
+group,models,responses,accuracy,accuracy_siblings,off_by_one_share_of_sibling_failures,no_parsable_answer_share
+new_data,1,315,0.025,0.0,0.193,0.276
+aiw_all_models,75,49838,0.072,0.083,0.688,0.055
+aiw_small_models_<10B,14,10840,0.043,0.053,0.339,0.08

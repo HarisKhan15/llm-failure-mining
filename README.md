@@ -133,6 +133,26 @@ Apriori thresholds (`min_support`, `min_confidence`) or the number of folds.
 - Clusters are only weakly separated (silhouette about 0.16) and partly reflect problem wording; the rule-based error types are the more reliable signal.
 - Correctness labels are the AIW authors' labels; we did not relabel any response.
 
+## Extension: does a newer small model fail the same way?
+
+I collected 315 new answers (63 prompts × 5 trials, temperature 0.7) from **Llama 3.2 3B** via Ollama
+and compared them with the AIW data using `python -m llm_failure_mining.compare`.
+
+| | Llama 3.2 3B | AIW, all 75 models | AIW, models < 10B |
+|---|---|---|---|
+| Accuracy | 2.5% | 7.2% | 4.3% |
+| Accuracy on sibling problems | 0% | 8.3% | 5.3% |
+| Off-by-one share of sibling failures | 19.3% | 68.8% | 33.9% |
+| No parsable answer | 27.6% | 5.5% | 8.0% |
+
+Llama 3.2 3B does **not** mainly make the "forgot Alice" error: its failures are more scattered
+(46% `other_wrong`) and it often ignores the answer format. This fits the main finding that the
+error profile depends on the model family and size. With one model and 315 answers, this is an
+observation, not a general result. Labels for the new data are automatic (parsed number equals
+the right answer), unlike the AIW labels, which include manual checks.
+
+Full report: [results/compare_ollama_llama3.2_3b/COMPARISON.md](results/compare_ollama_llama3.2_3b/COMPARISON.md)
+
 ## Documentation
 
 - [PIPELINE_EXPLAINED.md](PIPELINE_EXPLAINED.md): how every part works, in plain English

@@ -1,0 +1,10 @@
+setting,method,roc_auc_mean,roc_auc_std,pr_auc_mean,pr_auc_std,balanced_accuracy_mean,balanced_accuracy_std
+unseen_models,constant_baseline,0.5,0.0,0.072,0.05,0.5,0.0
+unseen_models,gradient_boosting,0.651,0.102,0.145,0.084,0.595,0.082
+unseen_models,logistic_regression,0.678,0.047,0.116,0.057,0.648,0.044
+unseen_models,prior_by_family,0.676,0.093,0.126,0.078,0.639,0.081
+unseen_prompts,constant_baseline,0.5,0.0,0.072,0.014,0.5,0.0
+unseen_prompts,gradient_boosting,0.782,0.017,0.264,0.115,0.731,0.045
+unseen_prompts,gradient_boosting_with_model_id,0.845,0.028,0.453,0.09,0.795,0.011
+unseen_prompts,logistic_regression,0.763,0.032,0.183,0.015,0.735,0.024
+unseen_prompts,prior_by_model,0.837,0.055,0.314,0.059,0.779,0.023

@@ -1,0 +1,26 @@
+antecedents,consequents,support,confidence,lift
+family=qwen AND length=short_<20w AND problem=aiw_siblings,error=other_wrong,0.0302,0.566,3.54
+family=qwen AND length=short_<20w,error=other_wrong,0.0334,0.538,3.36
+family=qwen AND length=short_<20w AND style=restricted_format,error=other_wrong,0.0226,0.509,3.18
+family=mistral AND problem=aiw_siblings AND size=xlarge_>100B,error=off_by_one_low,0.0336,0.972,1.81
+problem=aiw_siblings AND size=xlarge_>100B AND style=standard,error=off_by_one_low,0.0203,0.926,1.72
+family=mistral AND problem=aiw_siblings AND size=large_40-100B,error=off_by_one_low,0.0263,0.917,1.7
+family=cohere AND length=short_<20w AND problem=aiw_siblings,error=off_by_one_low,0.0352,0.898,1.67
+family=cohere AND problem=aiw_siblings,error=off_by_one_low,0.0391,0.893,1.66
+family=cohere AND problem=aiw_siblings AND size=unknown_closed,error=off_by_one_low,0.0391,0.893,1.66
+length=medium_20-150w AND problem=aiw_siblings AND size=xlarge_>100B,error=off_by_one_low,0.0499,0.884,1.64
+family=mistral AND length=medium_20-150w AND size=large_40-100B,error=off_by_one_low,0.0219,0.881,1.64
+family=mistral AND problem=aiw_siblings AND size=unknown_closed,error=off_by_one_low,0.0586,0.874,1.63
+problem=aiw_siblings AND size=xlarge_>100B,error=off_by_one_low,0.0718,0.868,1.61
+length=medium_20-150w AND size=xlarge_>100B,error=off_by_one_low,0.0502,0.857,1.59
+family=mistral AND size=xlarge_>100B,error=off_by_one_low,0.0342,0.851,1.58
+family=mistral AND length=short_<20w AND problem=aiw_siblings,error=off_by_one_low,0.0312,0.841,1.56
+family=mistral AND length=short_<20w AND style=restricted_format,error=off_by_one_low,0.0242,0.83,1.54
+family=mistral AND length=medium_20-150w AND size=unknown_closed,error=off_by_one_low,0.0393,0.827,1.54
+family=mistral AND length=short_<20w,error=off_by_one_low,0.0312,0.818,1.52
+problem=aiw_siblings AND size=unknown_closed AND style=standard,error=off_by_one_low,0.0741,0.816,1.52
+problem=aiw_siblings AND size=unknown_closed AND style=restricted_format,error=off_by_one_low,0.1171,0.815,1.52
+family=mistral AND problem=aiw_siblings AND style=standard,error=off_by_one_low,0.0362,0.813,1.51
+family=mistral AND problem=aiw_siblings AND style=think_step_by_step,error=off_by_one_low,0.0289,0.812,1.51
+length=short_<20w AND problem=aiw_siblings AND size=unknown_closed,error=off_by_one_low,0.1697,0.81,1.51
+family=cohere AND length=short_<20w,error=off_by_one_low,0.0352,0.807,1.5

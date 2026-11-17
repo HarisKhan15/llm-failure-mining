@@ -1,0 +1,9 @@
+prompt_style,adds_given_numbers,copies_given_number,no_parsable_answer,off_by_one_high,off_by_one_low,other_wrong,right_number_wrong_reasoning,n_failures,accuracy
+restricted_format,0.059,0.06,0.09,0.019,0.582,0.187,0.002,16600,0.095
+standard,0.054,0.11,0.03,0.026,0.581,0.19,0.008,14067,0.057
+think_step_by_step,0.057,0.144,0.048,0.03,0.561,0.151,0.009,12884,0.062
+base_completion,0.0,0.119,0.0,0.046,0.663,0.171,0.0,1251,0.052
+bare_question,0.005,0.281,0.209,0.003,0.48,0.021,0.0,989,0.03
+persona_scientist,0.0,0.02,0.018,0.0,0.947,0.015,0.0,394,0.022
+gender_clarified,0.0,0.0,0.0,0.0,0.981,0.019,0.0,54,0.4
+confidence_request,0.0,0.0,1.0,0.0,0.0,0.0,0.0,10,0.0

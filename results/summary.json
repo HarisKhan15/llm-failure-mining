@@ -1,0 +1,73 @@
+{
+  "n_responses": 49838,
+  "n_models": 75,
+  "n_prompts": 63,
+  "dropped_records": 0,
+  "overall_accuracy": 0.072,
+  "accuracy_by_problem_type": {
+    "aiw_plus_cousins": 0.0201,
+    "aiw_siblings": 0.0827
+  },
+  "accuracy_by_style": {
+    "gender_clarified": 0.4,
+    "restricted_format": 0.0953,
+    "think_step_by_step": 0.0619,
+    "standard": 0.0567,
+    "base_completion": 0.0523,
+    "bare_question": 0.0304,
+    "persona_scientist": 0.0223,
+    "confidence_request": 0.0
+  },
+  "responses_by_style": {
+    "restricted_format": 18349,
+    "standard": 14912,
+    "think_step_by_step": 13734,
+    "base_completion": 1320,
+    "bare_question": 1020,
+    "persona_scientist": 403,
+    "gender_clarified": 90,
+    "confidence_request": 10
+  },
+  "error_share_among_failures": {
+    "off_by_one_low": 0.5795,
+    "other_wrong": 0.1723,
+    "copies_given_number": 0.1046,
+    "no_parsable_answer": 0.0594,
+    "adds_given_numbers": 0.0537,
+    "off_by_one_high": 0.0246,
+    "right_number_wrong_reasoning": 0.0059
+  },
+  "error_share_siblings_failures": {
+    "off_by_one_low": 0.6879,
+    "other_wrong": 0.1516,
+    "no_parsable_answer": 0.0688,
+    "copies_given_number": 0.0605,
+    "off_by_one_high": 0.0201,
+    "adds_given_numbers": 0.0105,
+    "right_number_wrong_reasoning": 0.0006
+  },
+  "hypothesis_accuracy_vs_off_by_one": {
+    "n_models": 49,
+    "spearman_rho": -0.058
+  },
+  "top_models_accuracy": {
+    "gpt-4o-2024-05-13": 0.474,
+    "claude-3-opus-20240229": 0.405,
+    "llama-2-70b-chat": 0.3594,
+    "gpt-4-0613": 0.2637,
+    "llama-2-7b-chat": 0.2108,
+    "gpt-4-0125-preview": 0.1609,
+    "dbrx-instruct": 0.105,
+    "codellama-34b-instruct": 0.09
+  },
+  "bottom_models_accuracy": {
+    "open-mistral-7b": 0.0036,
+    "claude-3-haiku-20240307": 0.0033,
+    "open-mixtral-8x7b": 0.0028,
+    "qwen1.5-14b-chat": 0.0021,
+    "gemma-7b-it": 0.0,
+    "llama-2-13b": 0.0,
+    "mistral-small": 0.0,
+    "mixtral-8x22b": 0.0
+  }
+}
